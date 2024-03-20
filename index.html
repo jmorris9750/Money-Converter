@@ -6,29 +6,27 @@
 </head>
 <body>
     <link rel="stylesheet" href="style.css">
-    <div id="title">Money Converter</div>
-   <div id="textbox"> <input type="text" id="box1"  /></div>
-    <div class="dropdown1">
-        <button onclick="showDrop1()"  id="drop1" class="dropb">dropdown</button>
-        <div id="myDropdown" class="dropdown-content">
-`       <a href="#usd">usd</a>
-        <a href="#currency2">pesos</a>
-        <a href="#curreny3">yen</a>
-        </div>
+    <h2 id="title">Money Converter</h2>
+    <div class="convert">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount">
+        <label for="from">From:</label>
+        <select id="from">
+          <option value="usd">usd</option>
+          <option value="pesos">pesos</option>
+          <option value="yen">yen</option>
+          <option value="idk">idk</option>
+        </select>
+        <label for="to">To:</label>
+        <select id="to">
+            <option value="usd">usd</option>
+            <option value="pesos">pesos</option>
+            <option value="yen">yen</option>
+            <option value="idk">idk</option>
+          </select>
+        <button id="Converter" onclick="convertCurrency()">Convert</button>
+        <div id="result"></div>
     </div>
-    <div class="dropdown2">
-        <button onclick="showDrop1()" id="drop2" class="dropb">dropdown</button>
-        <div id="myDropdown" class="dropdown-content">
-`      <p class="usd">usd</p>
-       <p>pesos</p>
-        <p>yen</p>
-    </div>
-    <div>
-        <button id="Converter">Convert</button>
-
-    </div>
-
-    
     <script src="script.js"></script>
 </body>
 </html>
