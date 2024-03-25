@@ -38,6 +38,14 @@ const exchangeRates = {
       yen:163.65 , 
       rupee: 90.47 ,
       eur:1
+    },
+
+    rupee: {
+      usd:0.012 ,
+      pesos:0.20  ,
+      yen: 1.81 ,
+      rupee:1,
+      eur: 0.011 , 
     }
 
 
@@ -48,63 +56,103 @@ const exchangeRates = {
 
 function convertCurrency() {
   //usd
-    if (dd_from.value == "usd", dd_to.value == "pesos") {
+    if (dd_from.value == "usd" && dd_to.value == "pesos") {
       div_result.innerText = in_amount.value * exchangeRates.usd.pesos
     }
 
-    else if (dd_from.value == "usd",  dd_to.value == "yen") {
+    if (dd_from.value == "usd" && dd_to.value == "yen") {
       div_result.innerText = in_amount.value * exchangeRates.usd.yen
     }
 
-    else if (dd_from.value == "usd", dd_to.value == "eur") {
+    if (dd_from.value == "usd" && dd_to.value == "eur") {
       div_result.innerText = in_amount.value * exchangeRates.usd.eur
     }
 
-    else if (dd_from.value == "usd", dd_to.value == "inr") {
+    if (dd_from.value == "usd" && dd_to.value == "inr") {
       div_result.innerText = in_amount.value * exchangeRates.usd.rupee
     }
 
-    else if (dd_from.value == "usd", dd_to.value == "usd") {
+    if (dd_from.value == "usd"&& dd_to.value == "usd") {
       div_result.innerText = in_amount.value * exchangeRates.usd.usd
     }
 //pesos
-    else if (dd_from.value == "pesos", dd_to.value == "pesos") {
-      div_result.innerText = in_amount.value * exchangeRates.pesos.pesos
+    if (dd_from.value == "pesos" && dd_to.value == "pesos") {
+      div_result.innerText = in_amount.value * exchangeRates.usd.usd
     }
 
-    else if (dd_from.value == "pesos", dd_to.value == "yen") {
+    if (dd_from.value == "pesos" && dd_to.value == "yen") {
       div_result.innerText = in_amount.value * exchangeRates.pesos.yen
     }
 
-    else if (dd_from.value == "pesos", dd_to.value == "eur") {
+    if (dd_from.value == "pesos" && dd_to.value == "eur") {
       div_result.innerText = in_amount.value * exchangeRates.pesos.eur
     }
 
-    else if (dd_from.value == "pesos", dd_to.value == "inr") {
+    if (dd_from.value == "pesos" && dd_to.value == "inr") {
       div_result.innerText = in_amount.value * exchangeRates.pesos.rupee
     }
 
-    else if (dd_from.value == "pesos", dd_to.value == "usd") {
+    if (dd_from.value == "pesos" && dd_to.value == "usd") {
       div_result.innerText = in_amount.value * exchangeRates.pesos.usd
     }
-    //yen
-    else if (dd_from.value == "yen", dd_to.value == "pesos") {
+//yen
+    if(dd_from.value == "yen" && dd_to.value == "pesos") {
       div_result.innerText = in_amount.value * exchangeRates.yen.pesos
     }
 
-    else if (dd_from.value == "yen", dd_to.value == "yen") {
+    if (dd_from.value == "yen" && dd_to.value == "yen") {
       div_result.innerText = in_amount.value * exchangeRates.yen.yen
     }
 
-    else if (dd_from.value == "yen", dd_to.value == "eur") {
+    if (dd_from.value == "yen" && dd_to.value == "eur") {
       div_result.innerText = in_amount.value * exchangeRates.yen.eur
     }
 
-    else if (dd_from.value == "yen", dd_to.value == "inr") {
+    if (dd_from.value == "yen" && dd_to.value == "inr") {
       div_result.innerText = in_amount.value * exchangeRates.yen.rupee
     }
 
-    else if (dd_from.value == "yen", dd_to.value == "usd") {
+    if (dd_from.value == "yen" && dd_to.value == "usd") {
       div_result.innerText = in_amount.value * exchangeRates.yen.usd
+    }
+//euro
+    if(dd_from.value == "eur" && dd_to.value == "pesos") {
+      div_result.innerText = in_amount.value * exchangeRates.eur.pesos
+    }
+
+    if (dd_from.value == "eur" && dd_to.value == "yen") {
+      div_result.innerText = in_amount.value * exchangeRates.eur.yen
+    }
+
+    if (dd_from.value == "eur" && dd_to.value == "eur") {
+      div_result.innerText = in_amount.value * exchangeRates.eur.eur
+    }
+
+    if (dd_from.value == "eur" && dd_to.value == "inr") {
+      div_result.innerText = in_amount.value * exchangeRates.eur.rupee
+    }
+
+    if (dd_from.value == "eur" && dd_to.value == "usd") {
+      div_result.innerText = in_amount.value * exchangeRates.eur.usd
+    }
+//rupee 
+    if(dd_from.value == "inr" && dd_to.value == "pesos") {
+      div_result.innerText = in_amount.value * exchangeRates.rupee.pesos
+    }
+
+    if (dd_from.value == "inr" && dd_to.value == "yen") {
+      div_result.innerText = in_amount.value * exchangeRates.rupee.yen
+    }
+
+    if (dd_from.value == "inr" && dd_to.value == "eur") {
+      div_result.innerText = in_amount.value * exchangeRates.rupee.eur
+    }
+
+    if (dd_from.value == "inr" && dd_to.value == "inr") {
+      div_result.innerText = in_amount.value * exchangeRates.rupee.rupee
+    }
+
+    if (dd_from.value == "inr" && dd_to.value == "usd") {
+      div_result.innerText = in_amount.value * exchangeRates.rupee.usd
     }
     }
