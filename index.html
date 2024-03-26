@@ -6,8 +6,10 @@
 </head>
 <body>
     <link rel="stylesheet" href="style.css">
+<!-- title -->
     <h2 id="title">Money Converter</h2>
     <div class="convert">
+<!-- fromdropdown -->
         <label for="amount">Amount:</label>
         <input type="number" id="amount">
         <label for="from">From:</label>
@@ -18,6 +20,7 @@
           <option value="eur">euro</option>
           <option value="inr">rupee</option>
         </select>
+<!-- todropdown -->
         <label for="to">To:</label>
         <select id="to">
             <option value="usd">usd</option>
@@ -27,7 +30,9 @@
             <option value="inr">rupee</option>
 
           </select>
+<!-- convertbutton -->
         <button id="Converter" onclick="convertCurrency()">Convert</button>
+<!-- endproduct -->
         <div id="result"></div>
     </div>
     <script src="script.js"></script>
